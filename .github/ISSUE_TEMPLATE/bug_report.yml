@@ -1,0 +1,28 @@
+name: Bug report
+description: Report reproducible behavior without sharing private location or device data
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include real course coordinates, location history, signing material, device identifiers, or personal screenshots.
+  - type: input
+    id: os
+    attributes:
+      label: OS versions
+      description: iOS and watchOS versions, without device identifiers
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps using synthetic or redacted data
+    validations:
+      required: true

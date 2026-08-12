@@ -1,0 +1,2 @@
+"NSLocationWhenInUseUsageDescription" = "Use your current location to save a course you choose. Coordinates stay on this iPhone and are never uploaded.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Even when Never Miss Golf is closed, it needs to tell whether you enter or leave a saved course so it can schedule or cancel a reminder. The app doesn’t record continuous routes or upload your location.";

@@ -1,0 +1,70 @@
+name: NeverMissGolf
+
+options:
+  # Example namespace only. Replace it with a reverse-DNS identifier you control.
+  bundleIdPrefix: org.nevermissgolf
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 0.1.0
+
+targets:
+  NeverMissGolf:
+    type: application
+    platform: iOS
+    sources:
+      - path: Shared
+      - path: iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.nevermissgolf.NeverMissGolf
+        INFOPLIST_FILE: Config/Info-iOS.plist
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - target: NeverMissGolfWatch
+        embed: true
+
+  NeverMissGolfWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - path: Shared
+      - path: Watch
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.nevermissgolf.NeverMissGolf.watchkitapp
+        INFOPLIST_FILE: Config/Info-watchOS.plist
+        PRODUCT_NAME: Never Miss Golf
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+
+  NeverMissGolfTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: NeverMissGolf
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.nevermissgolf.NeverMissGolfTests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  NeverMissGolf:
+    build:
+      targets:
+        NeverMissGolf: all
+        NeverMissGolfWatch: all
+        NeverMissGolfTests: [test]
+    test:
+      targets:
+        - NeverMissGolfTests

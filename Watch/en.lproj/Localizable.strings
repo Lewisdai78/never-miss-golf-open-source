@@ -1,0 +1,17 @@
+"watch.manual_start" = "You still tap Start yourself";
+"watch.opening" = "Opening";
+"watch.open_workout" = "Open Workout";
+"watch.status.ready_title" = "Golf is ready";
+"watch.status.opening_title" = "Switching";
+"watch.status.opened_title" = "Open requested";
+"watch.status.failed_title" = "Can’t open right now";
+"watch.status.ready_detail" = "Go to Apple’s built-in Workout app";
+"watch.status.opening_detail" = "Please wait…";
+"watch.status.opened_detail" = "Start it yourself in Workout";
+"language.title" = "Language";
+"language.system" = "System Default";
+"language.english" = "English";
+"language.simplified_chinese" = "Simplified Chinese";
+"action.open_workout" = "Open Workout";
+"action.not_today" = "Not today";
+"action.snooze_ten_minutes" = "Snooze 10 min";

@@ -1,0 +1,2 @@
+"NSLocationWhenInUseUsageDescription" = "用于把你当前选择的位置保存为球场。坐标只保存在这台 iPhone，不会上传。";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "即使 Never Miss Golf 没有打开，也需要判断你是否进入或离开已保存球场，以便安排或取消提醒。App 不记录连续轨迹，也不会上传位置。";

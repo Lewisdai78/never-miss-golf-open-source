@@ -1,0 +1,44 @@
+# macOS and Xcode local state
+.DS_Store
+.build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.xcresult
+*.dSYM
+*.dSYM.zip
+*.ipa
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+
+# Signing material and secrets
+*.p8
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Website build and local state
+docs/node_modules/
+docs/.next/
+docs/.vinext/
+docs/dist/
+docs/.wrangler/
+docs/*.tgz
+
+# Local-only material
+Confidential/
+Private/
+Media/
+*.tmp
+*.swp
+*~
