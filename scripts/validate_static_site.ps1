@@ -19,6 +19,9 @@ $cname = (Get-Content -LiteralPath $cnamePath -Raw).Trim()
 $requiredHtml = @(
     'https://never-miss-golf.com/',
     'https://github.com/Lewisdai78/never-miss-golf-open-source',
+    'https://x.com/BAIHEs99s',
+    'GITHUB',
+    '@BAIHEs99s',
     'Content-Security-Policy',
     'Never Miss Golf requests the handoff',
     'The prototype does not silently control Apple Workout'
