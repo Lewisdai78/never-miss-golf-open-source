@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Save a golf course on your iPhone, get a private Apple Watch reminder, and choose when to open Golf in Apple Workout.">
+    <meta name="theme-color" content="#071d17">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Never Miss Golf — A private wrist reminder for your round">
+    <meta property="og:description" content="A local-first iPhone and Apple Watch prototype that reminds you without silently starting a workout.">
+    <meta property="og:url" content="https://never-miss-golf.com/">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://never-miss-golf.com/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <title>Never Miss Golf — A private wrist reminder for your round</title>
+  </head>
+  <body>
+    <main>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Never Miss Golf home">
+          <span class="brand-mark" aria-hidden="true">●</span>
+          NEVER MISS GOLF
+        </a>
+        <div class="nav-links">
+          <a href="#flow">How it works</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#source">Source</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> iPhone + Apple Watch prototype</p>
+          <h1>Arrive at the course.<br><em>Remember the workout.</em></h1>
+          <p class="lede">
+            Never Miss Golf keeps one small promise: after you stay near a course you saved,
+            it gives your wrist a quiet nudge. You decide what happens next.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#flow">See the flow <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="https://github.com/Lewisdai78/never-miss-golf-open-source" rel="noopener">View source</a>
+          </div>
+          <ul class="trust-row" aria-label="Product principles">
+            <li>On device</li><li>No account</li><li>No GPS history</li><li>Never auto-starts</li>
+          </ul>
+        </div>
+
+        <div class="device-stage" aria-label="Illustration of the iPhone and Apple Watch experience">
+          <div class="course-orbit orbit-one"></div><div class="course-orbit orbit-two"></div>
+          <div class="phone">
+            <div class="phone-island"></div>
+            <div class="phone-screen">
+              <div class="app-bar"><span>‹</span><b>GOLF NEVER MISS</b><span class="status-dot"></span></div>
+              <div class="hero-card">
+                <small>● COURSE REMINDERS READY</small>
+                <strong>When you arrive,<br>don’t miss<br>Golf Workout</strong>
+                <span>1 of 3 courses saved</span>
+              </div>
+              <div class="status-panel">
+                <p>PERMISSIONS &amp; STATUS</p>
+                <div><span class="mini-icon">↗</span><b>Location</b><i></i></div>
+                <div><span class="mini-icon">◉</span><b>Reminders</b><i></i></div>
+              </div>
+              <div class="course-panel"><span>⚑</span><div><b>My saved course</b><small>Stored only on this iPhone</small></div></div>
+            </div>
+          </div>
+          <div class="watch">
+            <div class="watch-crown"></div>
+            <div class="watch-screen">
+              <div class="watch-icon">⚑</div>
+              <b>Ready to<br>play golf?</b>
+              <small>It looks like you’ve been at a saved course for a little while.</small>
+              <span class="watch-action">Open Workout</span>
+              <span class="watch-alt">Not today · Snooze 10 min</span>
+            </div>
+          </div>
+          <div class="signal-chip">PRIVATE · LOCAL · ON DEVICE</div>
+        </div>
+      </section>
+
+      <section class="flow-section" id="flow">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> A deliberately small product</p>
+          <h2>One reminder.<br>Three human decisions.</h2>
+          <p>The app never guesses that you are playing. It waits, asks, and leaves the final action to you.</p>
+        </div>
+        <div class="flow-grid">
+          <article><span class="step">01</span><div class="step-visual pin"><i></i><i></i><i></i></div><h3>Save a course</h3><p>Keep up to three course centers on your iPhone. No map history, route, or cloud account.</p></article>
+          <article><span class="step">02</span><div class="step-visual pulse"><i></i><i></i><b>⚑</b></div><h3>Get a wrist reminder</h3><p>After the device detects a qualifying stay, a local notification can reach your Apple Watch.</p></article>
+          <article><span class="step">03</span><div class="step-visual choices"><b>Open Workout</b><span>Not today</span><span>Snooze 10 min</span></div><h3>You choose</h3><p>Open Apple Workout, dismiss the visit, or ask again later. Nothing starts silently.</p></article>
+        </div>
+      </section>
+
+      <section class="boundary-section">
+        <div class="boundary-copy">
+          <p class="eyebrow light"><span></span> The honest Apple boundary</p>
+          <h2>A reminder can open the door.<br>It cannot play the round for you.</h2>
+          <p>
+            Never Miss Golf requests the handoff to Apple’s built-in Golf workout. The user still confirms the
+            reminder and taps Start inside Apple Workout. The prototype does not silently control Apple Workout.
+          </p>
+        </div>
+        <div class="boundary-flow" aria-label="Product handoff sequence">
+          <div><small>NEVER MISS GOLF</small><b>Ready to play golf?</b><span>Open Workout</span></div>
+          <i aria-hidden="true">→</i>
+          <div><small>APPLE WORKOUT</small><b>Golf</b><span class="play">▶</span></div>
+          <i aria-hidden="true">→</i>
+          <div class="human"><small>USER ACTION</small><b>Tap to start</b><span>Required</span></div>
+        </div>
+      </section>
+
+      <section class="privacy-section" id="privacy">
+        <div class="privacy-card">
+          <div class="lock" aria-hidden="true"><span></span></div>
+          <p class="eyebrow"><span></span> Privacy by absence</p>
+          <h2>There is almost nothing to steal.</h2>
+          <p>Course data stays inside the app container on your iPhone. The prototype has no business server, account system, advertising, or analytics SDK.</p>
+        </div>
+        <div class="privacy-list">
+          <div><span>✓</span><b>One center point</b><p>Only the course location you choose—not your path there or away.</p></div>
+          <div><span>✓</span><b>Local reminder state</b><p>Just enough state to avoid repeatedly nudging you during the same visit.</p></div>
+          <div><span>—</span><b>No health-data access</b><p>The prototype does not read or write workout, heart-rate, or calorie data.</p></div>
+          <div><span>×</span><b>No cloud trail</b><p>No account, remote database, analytics event stream, or continuous GPS log.</p></div>
+        </div>
+      </section>
+
+      <section class="source-section" id="source">
+        <div>
+          <p class="eyebrow"><span></span> Built in public, released with care</p>
+          <h2>Open enough to learn from.<br>Private enough to be safe.</h2>
+        </div>
+        <div class="source-copy">
+          <p>
+            The public repository contains the iOS and watchOS source, project configuration, state-machine tests,
+            privacy documentation and reproducible safety checks. Signing credentials, real coordinates, device data,
+            private configuration and development history are intentionally excluded.
+          </p>
+          <a class="button primary" href="https://github.com/Lewisdai78/never-miss-golf-open-source" rel="noopener">Open GitHub ↗</a>
+        </div>
+      </section>
+
+      <section class="status-section">
+        <p class="eyebrow"><span></span> Prototype status</p>
+        <div class="status-grid">
+          <div><b>Built</b><p>Native iOS and watchOS prototype</p></div>
+          <div><b>Tested</b><p>Home-simulated end-to-end device flow</p></div>
+          <div><b>Pending</b><p>Repeated on-course arrival validation</p></div>
+          <div><b>Not claimed</b><p>Automatic workout start or production reliability</p></div>
+        </div>
+      </section>
+
+      <footer>
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">●</span> NEVER MISS GOLF</a>
+        <p>A private, user-confirmed golf reminder prototype.</p>
+        <a class="creator" href="https://github.com/Lewisdai78" rel="noopener">Built by @Lewisdai78</a>
+      </footer>
+    </main>
+  </body>
+</html>

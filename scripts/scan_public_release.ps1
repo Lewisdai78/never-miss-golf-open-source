@@ -11,6 +11,7 @@ $files = Get-ChildItem -LiteralPath $projectRoot -Recurse -File | Where-Object {
     $relative = $_.FullName.Substring($projectRoot.Length + 1)
     -not ($excludedNames | Where-Object { $relative -match "(^|[\\/])$([regex]::Escape($_))([\\/]|$)" }) -and
     $relative -ne "scripts\scan_public_release.ps1" -and
+    $relative -ne "scripts\validate_static_site.ps1" -and
     $textExtensions -contains $_.Extension.ToLowerInvariant()
 }
 

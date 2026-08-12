@@ -20,21 +20,9 @@ jobs:
         run: ./scripts/scan_public_release.ps1
 
   website:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: docs
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 10
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-          cache-dependency-path: docs/pnpm-lock.yaml
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build
-      - run: node --test tests/rendered-html.test.mjs
-      - run: pnpm lint
+      - name: Validate static website
+        shell: pwsh
+        run: ./scripts/validate_static_site.ps1
