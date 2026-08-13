@@ -1,5 +1,7 @@
 # Never Miss Golf
 
+**English** | [简体中文](README.zh-CN.md)
+
 Get a quiet Apple Watch reminder to start Golf after arriving at a course you saved.
 
 <p align="center">
